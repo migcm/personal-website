@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Miguel CM</title>
+		<meta name="description" content="Miguel CM's personal website.">
+		<meta name="author" content="Miguel CM">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/images/ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/ico/favicon-16x16.png">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJKFSLFCMH"></script>
+		<script>
+		  	window.dataLayer = window.dataLayer || [];
+		  	function gtag(){dataLayer.push(arguments);}
+		  	gtag('js', new Date());
+		  	gtag('config', 'G-SJKFSLFCMH');
+		</script>
+	</head>
+
+	<body>
+	  
+		<!-- Top Alert  -->
+		<div class="alert info"> <span class="closebtn">&times;</span>  <strong>¡Hola! Soy Miguel CM y esta es mi web personal. ¡Te dejo con mis proyectos!</strong> </div>
+	
+		<!-- Filtter Button -->
+		<div class="container-btn">
+			<div class="searchbar">
+				<div class="search">
+					<input type="text" id="searchinput" onkeyup="searchFunction()" placeholder="Buscar">
+				</div>
+			</div>
+		  
+			<div class="buttons">
+				<div class="btn-group">
+					<button class="button btn-1 btn-2 active" onclick="filterSelection('all')"> Mostrar todo</button>
+					<button class="button btn-2" onclick="filterSelection('Libros')"> Libros y escritura</button>
+					<button class="button btn-1" onclick="filterSelection('Telegram')"> Telegram</button>
+					<!--<button class="button btn-2" onclick="filterSelection('RRSS')"> Redes sociales</button>-->
+					<!--<button class="button btn-1 btn-2" onclick="filterSelection('Foto')"> Fotografía</button>-->
+					<!--<button class="button" onclick="filterSelection('Docencia')"> Docencia</button>-->
+					<button class="button btn-1 btn-2" onclick="filterSelection('Dev')"> Desarrollo</button>
+					<button class="button btn-1 btn-2" onclick="filterSelection('Art')"> Arte</button>
+					<!--<button class="button" onclick="filterSelection('Otros')"> Otros</button>-->
+				</div>
+			</div>
+		</div>
+				
+		<!-- Content Card -->
+		<div class="container"> 
+				
+			<a href="http://unlocomuycuerdo.tumblr.com/" target="_blank">
+				<div class="item filterDiv Libros">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/libros-pluma.png"alt="Flickr Creative Commons"></div>
+						<div class="titlediv"><span class="title">Blog «Un Loco Muy Cuerdo»</span></div>
+						<p>Mi blog. Llevo tiempo escribiendo y, aquí, es donde plasmo mis ideas, opiniones y, por supuesto, reflexiones.</p>
+						</br>
+						<div class="tag"><span class="type">Libros y escritura</span></div>
+					</div>
+			  </div>
+			</a> 
+				
+			<a href="https://www.latostadora.com/rebelshirts/" target="_blank">
+				<div class="item filterDiv Otros">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/other-tshirt.png"alt="GraphicBurger"></div>
+						<div class="titlediv"><span class="title">Camisetas «Rebel Shirts»</span></div>
+						<p>Camisetas, sudaderas e infinidad de prendas de ropa originales, con diseños exclusivos y muy... rebeldes.</p>
+						</br>
+						<div class="tag"><span class="type">Arte</span></div>
+					</div>
+				</div>
+			</a> 
+				
+			<a href="https://t.me/oposicionesES" target="_blank">
+				<div class="item filterDiv Telegram Dev">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/tg-oposicionesES.png"alt="iconmonstr"></div>
+						<div class="titlediv"><span class="title">Canal de Telegram «Oposiciones y empleo público»</span></div>
+						<p>Un canal de Telegram donde se publican, diariamente, las nuevas plazas de oposición y empleo público de España.</p>
+						</br>
+						<div class="tag"><span class="type">Telegram</span><span class="type">Desarrollo</span></div>
+					</div>
+				</div>
+			</a> 
+
+			<a href="https://t.me/cibsecurity" target="_blank">
+				<div class="item filterDiv Telegram Dev">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/tg-cibsecurity.png"alt="Life of Vids"></div>
+						<div class="titlediv"><span class="title">Canal de Telegram «Cybersecurity & Privacy news»</span></div>
+						<p>Un canal de Telegram con noticias diarias sobre ciberseguridad y privacidad.</p>
+						</br>
+						<div class="tag"><span class="type">Telegram</span><span class="type">Desarrollo</span></div>
+					</div>
+				</div>
+			</a> 
+
+			<a href="https://www.amazon.es/s?i=stripbooks&rh=p_27%3ALalilolalo+Art" target="_blank">
+				<div class="item filterDiv Libros">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/libros-art.png"alt="iconmonstr"></div>
+						<div class="titlediv"><span class="title">Colección de "libros" «Tutifruti» de @lalilolalo.art</span></div>
+						<p>
+							No estás ante libros, estás ante mensajes.
+						</p>
+						<p>
+							Podrás dejar claro el tipo de personas que te rodean; desde los charlatanes (con «BlaBla Blá»), hasta los más callados (Con «Muy Facilito»). Por supuesto, también hay libro para los que se complican demasiado («En Binario»), para los que se creen que pueden hacerlo todo («Hazlo Tú») y para los que su imaginación no tiene límites («Tú Imaginas»).
+						</p>
+						</br>
+						<div class="tag"><span class="type">Libros y escritura</span><span class="type">Arte</span></div>
+					</div>
+				</div>
+			</a>
+
+			<a href="https://chrome.google.com/webstore/detail/netflix-hidden-categories/hdanhaedakbkjeomofnnmbfakoipopdn" target="_blank">
+				<div class="item filterDiv Dev">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/dev-netflix.png"alt="iconmonstr"></div>
+						<div class="titlediv"><span class="title">Extensión para Chorme «Netflix Hidden Categories»</span></div>
+						<p>Extensión para Google Chrome te permitirá encontrar categorías ocultas en Netflix. Podrás descubrir nuevas películas, documentales o series de tu interés, de tu temática favorita y a través de un cómo buscador.</p>
+						</br>
+						<div class="tag"><span class="type">Desarrollo</span></div>
+					</div>
+				</div>
+			</a> 
+
+			<!--
+			<a href="https://twitter.com/mglclv" target="_blank">
+				<div class="item filterDiv RRSS Docencia">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/rrss-twitter.png"alt="Life of Pix"></div>
+						<div class="titlediv"><span class="title">Twitter personal</span></div>
+						<p>En Twitter hablo sobre ciberseguridad, docencia y cosas interesantes. ¡No te lo pierdas!</p>
+						</br>
+						<div class="tag"><span class="type">Redes sociales</span><span class="type">Docencia</span></div>
+					</div>
+				</div>
+			</a> 
+			
+			<a href="https://www.instagram.com/miguelcm/" target="_blank">
+				<div class="item filterDiv RRSS Foto">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/rrss-instagram.png"alt="YouTube Audio Library"></div>
+						<div class="titlediv"><span class="title">Instagram personal</span></div>
+						<p>Me gusta mucho la fotografía y escribir, así que en él podrás encontrar una combinación de ambas.</p>
+						</br>
+						<div class="tag"><span class="type">Redes sociales</span><span class="type">Fotografía</span></div>
+					</div>
+				</div>
+			</a>
+			
+			<a href="https://github.com/migcm" target="_blank">
+				<div class="item filterDiv RRSS Dev">
+					<div class="content">
+						<div class="imgframe"><img src="assets/images/dev-github.png"alt="YouTube Audio Library"></div>
+						<div class="titlediv"><span class="title">Github personal</span></div>
+						<p>En Github es donde cuelgo algunos desarrollos. Por ahora, pocos y no muy interesantes, pero... ¡dadme tiempo!</p>
+						</br>
+						<div class="tag"><span class="type">Redes sociales</span><span class="type">Desarrollo</span></div>
+					</div>
+				</div>
+			</a>
+			--> 
+	  
+		</div>
+		<!-- /container -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+	</body>
+</html>
