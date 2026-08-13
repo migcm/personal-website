@@ -1,0 +1,14 @@
+{
+  "name": "Miguel CM",
+  "short_name": "Miguel CM",
+  "icons": [
+    {
+      "src": "assets/images/ico/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#393e41",
+  "background_color": "#393e41",
+  "display": "standalone"
+}
