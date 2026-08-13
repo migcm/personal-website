@@ -124,6 +124,7 @@ p {
 .site-header,
 .hero,
 .section,
+.contact-section,
 .site-footer {
   inline-size: min(100% - clamp(2rem, 6vw, 5rem), var(--page-max));
   margin-inline: auto;
@@ -237,6 +238,15 @@ h2 {
   font-weight: 800;
 }
 
+.contact-section .eyebrow {
+  color: var(--color-accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
 .project-groups {
   display: grid;
   gap: var(--space-6);
@@ -326,6 +336,7 @@ h2 {
   text-transform: uppercase;
 }
 
+.contact-section,
 .site-footer {
   display: grid;
   gap: var(--space-4);
@@ -334,11 +345,20 @@ h2 {
   color: var(--color-muted);
 }
 
+.contact-section a,
 .site-footer a {
   justify-self: start;
   min-block-size: 2.75rem;
   display: inline-flex;
   align-items: center;
+}
+
+.site-footer {
+  padding-block: var(--space-4);
+}
+
+.site-footer p {
+  color: var(--color-muted);
 }
 
 @media (min-width: 760px) {
@@ -361,9 +381,41 @@ h2 {
     inline-size: 4.5rem;
   }
 
+  .contact-section,
   .site-footer {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: start;
+  }
+}
+
+@media (max-width: 759px) {
+  body::after {
+    content: "";
+    display: block;
+    block-size: 12rem;
+  }
+
+  .section--projects {
+    padding-bottom: 0;
+  }
+
+  .contact-section {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: var(--space-2) var(--space-3);
+    padding-block: var(--space-4);
+  }
+
+  .contact-section a {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  .contact-section > div {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding-inline-end: 7rem;
   }
 }
 
