@@ -21,9 +21,6 @@
   --ease: 220ms ease;
 }
 
-/*
-  Cuando dispongas legalmente de Adobe Garamond Pro en formato web,
-  coloca los archivos en /assets/fonts/ y descomenta/ajusta estos bloques.
 
 @font-face {
   font-family: "Adobe Garamond Pro";
@@ -40,7 +37,7 @@
   font-weight: 700;
   font-display: swap;
 }
-*/
+
 
 /* ==========================================================
    2. RESET / BASE
